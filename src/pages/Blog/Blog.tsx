@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout"
+import Layout from 'components/Layout/Layout';
 
 function Blog() {
   return (
@@ -7,4 +7,4 @@ function Blog() {
     </Layout>
   )
 }
-export default Blog
+export default Blog;

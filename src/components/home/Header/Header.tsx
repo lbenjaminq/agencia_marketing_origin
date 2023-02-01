@@ -1,26 +1,16 @@
-import { Typewriter } from 'react-simple-typewriter'
+import { Link } from 'react-router-dom';
+import { Typewriter } from 'react-simple-typewriter';
 
 function Header() {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+        <div className="mx-auto max-w-full pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                <span className="text-gray-600">
-                  Announcing our next round of funding.{' '}
-                  <a href="#" className="font-semibold text-indigo-600">
-                    <span className="absolute inset-0" aria-hidden="true" />
-                    Read more <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </span>
-              </div>
-            </div>
             <div>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+              <h1 className="text-4xl font-bold pb-10 tracking-tight sm:text-7xl">
                 Hecha por <Typewriter
-                  words={['Benjamin', 'Leandro', 'Code', 'Repeat!']}
+                  words={['Benjamin', 'Leandro', 'Code']}
                   loop={5}
                   cursor
                   cursorStyle='_'
@@ -29,30 +19,24 @@ function Header() {
                   delaySpeed={1000}
                 />
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+              {/* <p className="mt-6 text-lg leading-8 text-gray-600 ">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                 amet fugiat veniam occaecat fugiat aliqua.
+              </p> */}
+              <p className="mt-16 text-2xl max-w-4xl leading-8 text-black ">
+                <span className='text-xl xs:text-sm md:text-xl font-medium leading-8 text-gray-700 sm:text-center   transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button pr-2'>
+                  <Link to='/'>Web Development</Link>
+                </span>
+                <span className='lg:mx-1 text-xl xs:text-sm md:text-xl font-medium leading-8 text-gray-700 sm:text-center transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button pr-2'>
+                  <Link to='/'> App Development</Link>
+                </span>
+                <span className='lg:mx-1 text-xl xs:text-sm md:text-xl font-medium leading-8 text-gray-700 sm:text-center transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button pr-2'>
+                  <Link to='/'> Game Development</Link>
+                </span>
+                <span className='lg:mx-1 text-xl xs:text-sm md:text-xl font-medium leading-8 text-gray-700 sm:text-center transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button pr-2'>
+                  <Link to='/'> Digital Marketing</Link>
+                </span>
               </p>
-              <div className="mt-8 flex gap-x-4 sm:justify-center">
-                <a
-                  href="#"
-                  className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
-                >
-                  Get started
-                  <span className="text-indigo-200" aria-hidden="true">
-                    &rarr;
-                  </span>
-                </a>
-                <a
-                  href="#"
-                  className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-                >
-                  Live demo
-                  <span className="text-gray-400" aria-hidden="true">
-                    &rarr;
-                  </span>
-                </a>
-              </div>
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
               <svg
@@ -87,4 +71,4 @@ function Header() {
     </main>
   )
 }
-export default Header
+export default Header;

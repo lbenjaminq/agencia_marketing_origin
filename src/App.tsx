@@ -7,9 +7,9 @@ import {
   Error404,
   Home,
   Services,
-} from "pages";
-import { Route, Routes } from "react-router-dom";
-import { RouterLayout } from "RouterLayout/RouterLayout";
+} from 'pages';
+import { Route, Routes } from 'react-router-dom';
+import { RouterLayout } from 'RouterLayout/RouterLayout';
 
 function App() {
   return (

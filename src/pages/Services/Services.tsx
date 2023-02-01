@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout"
+import Layout from 'components/Layout/Layout';
 
 function Services() {
   return (
@@ -7,4 +7,4 @@ function Services() {
     </Layout>
   )
 }
-export default Services
+export default Services;

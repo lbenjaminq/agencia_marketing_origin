@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout"
+import Layout from 'components/Layout/Layout';
 
 function Careers() {
   return (
@@ -7,4 +7,4 @@ function Careers() {
     </Layout>
   )
 }
-export default Careers
+export default Careers;

@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout"
+import Layout from 'components/Layout/Layout';
 
 function Cases() {
   return (
@@ -7,4 +7,4 @@ function Cases() {
     </Layout>
   )
 }
-export default Cases
+export default Cases;

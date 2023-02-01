@@ -1,4 +1,4 @@
-import Layout from "components/Layout/Layout"
+import Layout from 'components/Layout/Layout';
 
 function Contact() {
   return (
@@ -7,4 +7,4 @@ function Contact() {
     </Layout>
   )
 }
-export default Contact
+export default Contact;
