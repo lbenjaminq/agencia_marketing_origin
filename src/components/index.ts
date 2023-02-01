@@ -1,4 +1,7 @@
 export { default as Layout } from './Layout/Layout';
+export { default as BlogCases } from './cases/BlogCases/BlogCases';
+export { default as HeaderCases } from './cases/HeaderCases/HeaderCases';
+export * from './cases';
 export { default as BlogSection } from './home/Blog/BlogSection';
 export { default as CTA } from './home/CTA/CTA';
 export { default as Customers } from './home/Customers/Customers';

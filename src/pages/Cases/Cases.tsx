@@ -1,9 +1,11 @@
+import { BlogCases, HeaderCases } from 'components';
 import Layout from 'components/Layout/Layout';
 
 function Cases() {
   return (
     <Layout>
-      Cases
+      <HeaderCases />
+      <BlogCases />
     </Layout>
   )
 }
