@@ -1,20 +1,7 @@
 import { Link } from 'react-router-dom';
+import { Post } from 'interfaces';
 
-interface Props {
-  id: string
-  title: string
-  href: string
-  category: Category
-  description: string
-  imageUrl: string
-}
-
-interface Category {
-  name: string
-  href: string
-}
-
-const BlogCard: React.FC<Props> = ({ id, title, href, category, description, imageUrl }) => {
+const BlogCard = ({ id, title, href, category, description, imageUrl }: Post) => {
   const onMouseEnter = () => {
     const title_element = document.getElementById(id);
     title_element?.classList.add('text-orange-button');
