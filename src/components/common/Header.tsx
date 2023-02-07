@@ -1,15 +1,20 @@
-function HeaderCases() {
+interface Props {
+  title: string
+  description: string
+}
+
+function HeaderCases({ title, description }: Props) {
   return (
     <main>
-      <div className="relative px-6 lg:px-8">
+      <div className="relative h-[calc(100vh-7rem)] px-6 lg:px-8 ">
         <div className="mx-auto max-w-full pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
             <div>
               <h1 className="text-4xl font-bold pb-10 tracking-tight sm:text-7xl">
-                About us
+                {title}
               </h1>
-              <p className="mt-6 sm:text-lg xs:text-sm leading-8 text-gray-600 max-w-6xl ">
-                Every company has its "Cinderella" story about those dark times when it has just started hitting the market. Our story takes its beginning in 2013, at a small office with a few like - minded people and bottomless cups of coffee, that kept us working throughout the night when we have just started building a company with a strong idea. We strived to build a brand that will contribute to the world with useful products that empower people and make their lives easier. We still believe in it today.
+              <p className="mt-6 sm:text-lg xs:text-sm leading-8 text-gray-600 ">
+                {description}
               </p>
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">

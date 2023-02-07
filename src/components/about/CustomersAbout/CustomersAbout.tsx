@@ -1,4 +1,4 @@
-import { Customers } from "components/home"
+import { Customers } from "components/common";
 
 function CustomersAbout() {
   return (
@@ -9,4 +9,4 @@ function CustomersAbout() {
     </div>
   )
 }
-export default CustomersAbout
+export default CustomersAbout;

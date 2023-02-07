@@ -1,5 +1,5 @@
+import { Header, ServicesList } from 'components';
 import Layout from 'components/Layout/Layout';
-import { HeaderServices, ServicesList } from 'components/services';
 import { useEffect } from 'react';
 
 const posts_software = [
@@ -76,7 +76,7 @@ function Services() {
 
   return (
     <Layout>
-      <HeaderServices />
+      <Header title=' Software Development Services' description=' We love to shake established thought-patterns and create what has never been attempted before. We take seeds and grow jungles' />
       <div className="py-12 bg-gray-50">
       </div>
       <ServicesList posts={posts_software} section_title='Software and Product' />

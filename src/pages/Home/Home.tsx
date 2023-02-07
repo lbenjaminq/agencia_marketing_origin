@@ -1,4 +1,4 @@
-import { BlogSection, CTA, Customers, Features, Header, Incentives, UseCases, } from 'components';
+import { BlogSection, CTA, CustomersHome, Features, HeaderHome, Incentives, UseCases, } from 'components';
 import Layout from 'components/Layout/Layout';
 import { useEffect } from 'react';
 
@@ -10,12 +10,12 @@ function Home() {
 
   return (
     <Layout>
-      <Header />
+      <HeaderHome />
       <Incentives />
       <UseCases />
       <Features />
       <CTA />
-      <Customers />
+      <CustomersHome />
       <BlogSection />
     </Layout>
   )
