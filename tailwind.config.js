@@ -7,7 +7,7 @@ module.exports = {
         "orange-button": "#ff561e",
       },
       screens: {
-        xs: "280px",
+        xs: "300px",
         sm: "640px",
         // => @media (min-width: 640px) { ... }
 
